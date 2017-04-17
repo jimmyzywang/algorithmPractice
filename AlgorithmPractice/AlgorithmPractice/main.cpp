@@ -7,9 +7,16 @@
 //
 
 #include <iostream>
+#include "Utility.hpp"
+#include "SelectionSort.hpp"
 
 int main(int argc, const char * argv[]) {
     // insert code here...
+    size_t n = 10000;
+    int* array = Utility::GenerateRamdonArray(n, 0, n);
+    selectionSort(array, n);
+    Utility::PrintArray(array, n);
+    delete [] array;
     std::cout << "Hello, World!\n";
     return 0;
 }
