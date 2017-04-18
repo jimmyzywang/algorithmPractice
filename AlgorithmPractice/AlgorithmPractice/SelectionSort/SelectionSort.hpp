@@ -62,6 +62,8 @@ void mySelectionSortV2(T arr[],size_t count){
     ...
     
     Fix V2：临界条件有问题，当外层i = (n - 1)时，miniIndex从n开始，这时候arr[n]就越界了
+    
+    时间复杂度，如果n = 10000（一万），执行结果是0.11s；当n变成之前的10倍，大概是10万，时间变成11s左右，即N^2
 */
 template<typename T>
 void mySelectionSortV3(T arr[],size_t count){

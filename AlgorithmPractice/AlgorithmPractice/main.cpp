@@ -12,7 +12,7 @@
 
 int main(int argc, const char * argv[]) {
 
-    size_t n = 10000;
+    size_t n = 100000;
     int* array = Utility::GenerateRamdonArray(n, 0, n);
     Utility::TestSort("SelectionSort", mySelectionSortV3, array, n);
     delete [] array;
