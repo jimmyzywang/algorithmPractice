@@ -14,8 +14,7 @@ int main(int argc, const char * argv[]) {
 
     size_t n = 10000;
     int* array = Utility::GenerateRamdonArray(n, 0, n);
-    mySelectionSortV3(array, n);
-    Utility::PrintArray(array, n);
+    Utility::TestSort("SelectionSort", mySelectionSortV3, array, n);
     delete [] array;
     return 0;
 }

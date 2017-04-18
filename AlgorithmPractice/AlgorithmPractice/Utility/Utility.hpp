@@ -39,7 +39,7 @@ namespace Utility{
     //测试arr是否被正确排序
     template<typename T>
     bool isSorted(T arr[],size_t count){
-        for (int i = 0; i < count - 1; i++) {
+        for (int i = 0; i < count - 1; i++) { //这里循环到count - 1 而不是count，是因为i+1会越界
             if (arr[i] > arr[i + 1]) {
                 return false;
             }
@@ -49,12 +49,12 @@ namespace Utility{
     
     //测试排序的时间
     template<typename T>
-    void TestSortTime(const std::string& sortName,void(*sort)(T[],size_t),T arr[],size_t count){
+    void TestSort(const std::string& sortName,void(*sort)(T[],size_t),T arr[],size_t count){
         clock_t start_time = clock();
         sort(arr,count);
         clock_t end_time = clock();
         assert(isSorted(arr, count));
-        std::cout << "Time:" << sortName << (end_time - start_time) / CLOCKS_PER_SEC << "s";
+        std::cout << std::endl << sortName <<" Time:" << double(end_time - start_time) / CLOCKS_PER_SEC << "s" << std::endl;
     }
     
 
