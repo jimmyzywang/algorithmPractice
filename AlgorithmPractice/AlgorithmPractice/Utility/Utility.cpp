@@ -23,9 +23,10 @@ namespace Utility{
     }
     
     void PrintArray(int array[],size_t count){
-        std::cout << "PrintArray: " << std::endl;
+        std::cout << "PrintArray: start" << std::endl;
         for (int i = 0; i < count; i++) {
             std::cout << array[i] << " ";
         }
+        std::cout << std::endl << "PrintArray end " << std::endl;
     }
 }

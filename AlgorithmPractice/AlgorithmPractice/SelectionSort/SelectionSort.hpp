@@ -14,6 +14,10 @@
 #include <array>
 using namespace std;
 
-void selectionSort(int arr[],size_t count);
+void mySelectionSortV1(int arr[],size_t count);
+
+void mySelectionSortV2(int arr[],size_t count);
+
+void mySelectionSortV3(int arr[],size_t count);
 
 #endif /* SelectionSort_hpp */
