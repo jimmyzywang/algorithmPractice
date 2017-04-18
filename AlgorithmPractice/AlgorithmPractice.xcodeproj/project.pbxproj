@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		FE91E5331EA4EADA009BABA6 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FE91E5321EA4EADA009BABA6 /* main.cpp */; };
-		FE91E53B1EA4EDCD009BABA6 /* SelectionSort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FE91E5391EA4EDCD009BABA6 /* SelectionSort.cpp */; };
-		FE91E53E1EA4EF2F009BABA6 /* Utility.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FE91E53C1EA4EF2F009BABA6 /* Utility.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,9 +25,7 @@
 /* Begin PBXFileReference section */
 		FE91E52F1EA4EADA009BABA6 /* AlgorithmPractice */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AlgorithmPractice; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE91E5321EA4EADA009BABA6 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		FE91E5391EA4EDCD009BABA6 /* SelectionSort.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SelectionSort.cpp; path = SelectionSort/SelectionSort.cpp; sourceTree = "<group>"; };
 		FE91E53A1EA4EDCD009BABA6 /* SelectionSort.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = SelectionSort.hpp; path = SelectionSort/SelectionSort.hpp; sourceTree = "<group>"; };
-		FE91E53C1EA4EF2F009BABA6 /* Utility.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Utility.cpp; path = Utility/Utility.cpp; sourceTree = "<group>"; };
 		FE91E53D1EA4EF2F009BABA6 /* Utility.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Utility.hpp; path = Utility/Utility.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -64,9 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				FE91E5321EA4EADA009BABA6 /* main.cpp */,
-				FE91E5391EA4EDCD009BABA6 /* SelectionSort.cpp */,
 				FE91E53A1EA4EDCD009BABA6 /* SelectionSort.hpp */,
-				FE91E53C1EA4EF2F009BABA6 /* Utility.cpp */,
 				FE91E53D1EA4EF2F009BABA6 /* Utility.hpp */,
 			);
 			path = AlgorithmPractice;
@@ -129,8 +123,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE91E53B1EA4EDCD009BABA6 /* SelectionSort.cpp in Sources */,
-				FE91E53E1EA4EF2F009BABA6 /* Utility.cpp in Sources */,
 				FE91E5331EA4EADA009BABA6 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,6 +252,7 @@
 				FE91E5381EA4EADA009BABA6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
