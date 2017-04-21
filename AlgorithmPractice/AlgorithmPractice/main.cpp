@@ -9,12 +9,16 @@
 #include <iostream>
 #include "Utility.hpp"
 #include "SelectionSort.hpp"
+#include "InsertSort.h"
 
 int main(int argc, const char * argv[]) {
 
-    size_t n = 100000;
-    int* array = Utility::GenerateRamdonArray(n, 0, n);
-    Utility::TestSort("SelectionSort", mySelectionSortV3, array, n);
-    delete [] array;
+    size_t n = 5;
+    int* array1 = Utility::GenerateRamdonArray(n, 0, n);
+
+    Utility::PrintArray(array1, n);
+    Utility::TestSort("InsertSort", InsertSortV4, array1, n);
+    Utility::PrintArray(array1, n);
+    delete [] array1;
     return 0;
 }

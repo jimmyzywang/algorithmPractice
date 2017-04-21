@@ -12,7 +12,6 @@
 
 #include <stdio.h>
 #include <array>
-using namespace std;
 
 /*  这样理解不对：
     选择排序是一种O(N^2)的排序算法，具体情况是这样的：
@@ -26,7 +25,7 @@ void mySelectionSortV1(T arr[],size_t count){
     for (int i = 0; i < count; i++) {
         for (int j = i + 1; j < count; j++) {
             if (arr[j] < arr[i]) {
-                swap(arr[j], arr[i]);
+                std::swap(arr[j], arr[i]);
                 break;
             }
         }
@@ -51,6 +50,7 @@ void mySelectionSortV2(T arr[],size_t count){
                 miniIndex = j;
             }
         }
+        std::swap(arr[miniIndex], arr[i]);
     }
 }
 
@@ -74,7 +74,7 @@ void mySelectionSortV3(T arr[],size_t count){
                 miniIndex = j;
             }
         }
-        swap(arr[miniIndex], arr[i]);
+        std::swap(arr[miniIndex], arr[i]);
     }
 }
 
