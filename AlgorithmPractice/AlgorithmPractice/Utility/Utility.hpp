@@ -26,6 +26,13 @@ namespace Utility{
         return arr;
     }
     
+    template<typename T>
+    int* CopyArray(T array[],size_t count){
+        int* arr = new int[count];
+        std::copy(array, array + count, arr);
+        return arr;
+    }
+    
     //打印arr的每一个元素
     template<typename T>
     void PrintArray(T array[],size_t count){
@@ -53,7 +60,7 @@ namespace Utility{
         clock_t start_time = clock();
         sort(arr,count);
         clock_t end_time = clock();
-//        assert(isSorted(arr, count));
+        assert(isSorted(arr, count));
         std::cout << std::endl << sortName <<" Time:" << double(end_time - start_time) / CLOCKS_PER_SEC << "s" << std::endl;
     }
     

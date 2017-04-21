@@ -23,6 +23,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		FE1217921EAA2C5000DEF21C /* InsertSort_Modify.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = InsertSort_Modify.h; path = InsertSort/InsertSort_Modify.h; sourceTree = "<group>"; };
 		FE2CF9931EA5BD5600823936 /* InsertSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = InsertSort.h; path = InsertSort/InsertSort.h; sourceTree = "<group>"; };
 		FE91E52F1EA4EADA009BABA6 /* AlgorithmPractice */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AlgorithmPractice; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE91E5321EA4EADA009BABA6 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
@@ -64,6 +65,7 @@
 				FE91E53A1EA4EDCD009BABA6 /* SelectionSort.hpp */,
 				FE91E53D1EA4EF2F009BABA6 /* Utility.hpp */,
 				FE2CF9931EA5BD5600823936 /* InsertSort.h */,
+				FE1217921EAA2C5000DEF21C /* InsertSort_Modify.h */,
 			);
 			path = AlgorithmPractice;
 			sourceTree = "<group>";
