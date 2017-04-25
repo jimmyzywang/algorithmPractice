@@ -66,7 +66,7 @@ void mySelectionSortV2(T arr[],size_t count){
     时间复杂度，如果n = 10000（一万），执行结果是0.11s；当n变成之前的10倍，大概是10万，时间变成11s左右，即N^2
 */
 template<typename T>
-void mySelectionSortV3(T arr[],size_t count){
+void mySelectionSortV3(T arr[],int count){
     for (int i = 0; i < count; i++) {
         int miniIndex = i; //这里miniIndex从i开始，因为数组的坐标是从0开始的，i就是第i+1个元素
         for (int j = i; j < count; j++) {

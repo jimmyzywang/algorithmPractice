@@ -18,7 +18,7 @@
  */
 template <typename T>
 //坏的
-void InsertSort_ModifyV1(T arr[],size_t count) {
+void InsertSort_ModifyV1(T arr[],int count) {
     for (int i = 1; i < count; i++) {
         T temp = arr[i];
         for (int j = i - 1 ; j >= 0; j--) {
@@ -39,7 +39,7 @@ InsertSort_Modify是一种改进的InsertSort：
  */
 
 template <typename T>
-void InsertSort_ModifyV2(T arr[],size_t count) {
+void InsertSort_ModifyV2(T arr[],int count) {
     for (int i = 1; i < count; i++) { //还是从i = 1 开始
         T temp = arr[i]; //首先先把arr[i]的值赋给一个临时变量
         int j = i; //j表示元素arr[j]最终位置的index,从i的当前位置开始

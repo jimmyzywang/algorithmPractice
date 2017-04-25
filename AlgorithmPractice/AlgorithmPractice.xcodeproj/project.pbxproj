@@ -29,6 +29,7 @@
 		FE91E5321EA4EADA009BABA6 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		FE91E53A1EA4EDCD009BABA6 /* SelectionSort.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = SelectionSort.hpp; path = SelectionSort/SelectionSort.hpp; sourceTree = "<group>"; };
 		FE91E53D1EA4EF2F009BABA6 /* Utility.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Utility.hpp; path = Utility/Utility.hpp; sourceTree = "<group>"; };
+		FED5CFEA1EAD8E7B000CB524 /* MergeSort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MergeSort.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,13 +62,22 @@
 		FE91E5311EA4EADA009BABA6 /* AlgorithmPractice */ = {
 			isa = PBXGroup;
 			children = (
+				FED5CFE91EAD8E5A000CB524 /* Sort */,
 				FE91E5321EA4EADA009BABA6 /* main.cpp */,
-				FE91E53A1EA4EDCD009BABA6 /* SelectionSort.hpp */,
 				FE91E53D1EA4EF2F009BABA6 /* Utility.hpp */,
-				FE2CF9931EA5BD5600823936 /* InsertSort.h */,
-				FE1217921EAA2C5000DEF21C /* InsertSort_Modify.h */,
 			);
 			path = AlgorithmPractice;
+			sourceTree = "<group>";
+		};
+		FED5CFE91EAD8E5A000CB524 /* Sort */ = {
+			isa = PBXGroup;
+			children = (
+				FE1217921EAA2C5000DEF21C /* InsertSort_Modify.h */,
+				FE91E53A1EA4EDCD009BABA6 /* SelectionSort.hpp */,
+				FE2CF9931EA5BD5600823936 /* InsertSort.h */,
+				FED5CFEA1EAD8E7B000CB524 /* MergeSort.h */,
+			);
+			name = Sort;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
