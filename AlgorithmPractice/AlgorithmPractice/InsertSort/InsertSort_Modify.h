@@ -54,4 +54,25 @@ void InsertSort_ModifyV2(T arr[],int count) {
     }
 }
 
+/*
+ InsertSort_ModifyV3是一种改进的InsertSort：
+ 参数是需要排序的子数组的起点坐标，和终点坐标的位置，需要排序的区域是[r,l]
+ */
+
+template <typename T>
+void InsertSort_ModifyV3(T arr[],int r,int l) {
+    for (int i = r + 1; i <= l; i++) { //还是从i = 1 开始
+        T temp = arr[i]; //首先先把arr[i]的值赋给一个临时变量
+        int j = i - 1; //j表示元素arr[j]最终位置的index,从i的当前位置开始
+        for (; j >= r; j--) { //如果j前一个元素（已排序的元素）比i大，那么j - 1赋值给j（这里j的值会被覆盖，但是没关系，我们有保存temp）
+            if (arr[j] > temp) { //如果j前面的元素比temp大，那么
+                arr[j + 1] = arr[j];
+            }else{
+                break;
+            }
+        }
+        arr[j + 1] = temp;
+    }
+}
+
 #endif /* InsertSort_Modify_h */

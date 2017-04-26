@@ -71,7 +71,7 @@ namespace Utility{
     
     //测试排序的时间
     template<typename T>
-    void TestSort(const std::string& sortName,void(*sort)(T[],int),T arr[],int count){
+    void TestSort(const std::string& sortName,void(*sort)(T[],int),T arr[],int count,bool printResultIfSuceess = false){
         clock_t start_time = clock();
         sort(arr,count);
         clock_t end_time = clock();
