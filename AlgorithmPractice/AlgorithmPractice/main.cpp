@@ -13,17 +13,19 @@
 #include "InsertSort_Modify.h"
 #include "MergeSort.h"
 #include "QuickSort.h"
+#include "ReversePair.h"
 
 int main(int argc, const char * argv[]) {
 
-    int n = 100000;
-    int* array1 = Utility::GenerateRamdonArray(n,0,n);
-    int* array2 = Utility::CopyArray(array1, n);
+    int n = 5;
+    int* array1 = Utility::GenerateRamdonArray(n, 0, 10);
+    Utility::PrintArray(array1, n);
+    int result = getReversePairCount(array1, n);
+//    int* array2 = Utility::CopyArray(array1, n);
     
 //    int* array3 = Utility::CopyArray(array1, n);
 //    int* array4 = Utility::CopyArray(array1, n);
-    Utility::TestSort("MergeSortBU_V4", MergeSortBU_V3, array1, n);
-    Utility::TestSort("MergeSortBU_V5", MergeSortBU_V5, array2, n);
+//    Utility::TestSort("QuickSort_V2", QuickSort_V2, array2, n);
 //    Utility::TestSort("MergeSort 1", MergeSortV1, array2, n);
 //    Utility::TestSort("InsertSort_modify", InsertSort_ModifyV2, array3, n);
 //    Utility::TestSort("SelectSort", mySelectionSortV3, array4, n);
