@@ -12,6 +12,7 @@
 #include "InsertSort.h"
 #include "InsertSort_Modify.h"
 #include "MergeSort.h"
+#include "QuickSort.h"
 
 int main(int argc, const char * argv[]) {
 
